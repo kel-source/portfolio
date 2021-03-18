@@ -1,14 +1,16 @@
 :root {
-  --primary-color: white;
+  --primary-color: black;
+  --secondary-color: #59687a;
   --heading-font: "Libre Baskerville", serif;
 }
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  background-color: #222831;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: var(--primary-color);
 }
 h1 {
@@ -21,14 +23,24 @@ h1 .a-p {
 }
 
 .navbar {
-  background-color: #222831;
+  background-color: var(--secondary-color);
 }
 .navbar-nav {
   margin: 0 0 0 auto;
 }
+
+.hero {
+  margin-top: 150px !important;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .k {
   font-family: "Alex Brush", cursive;
   font-size: xx-large;
+  line-height: 0%;
 }
 .e-l {
   font-family: var(--heading-font);
@@ -36,14 +48,14 @@ h1 .a-p {
   position: relative;
   bottom: 4px;
 }
-
-.hero {
-  margin: 150px 10%;
-  text-align: center;
+.btn {
+  background-color: var(--secondary-color);
+  border: none;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 520px) {
   .hero {
-    margin: 100px 7%;
+    margin-top: 100px !important;
+    max-width: 95%;
   }
 }
