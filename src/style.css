@@ -29,6 +29,10 @@ h2 {
   font-family: var(--content-font);
 }
 
+.fa-spider:hover {
+  transition: 1s;
+  transform: rotateX(180deg);
+}
 .navbar-nav {
   margin: 0 0 0 auto;
 }
@@ -55,7 +59,7 @@ h2 {
 
 @media (max-width: 576px) {
   body {
-    background-image: url("/media/sm-web.jpg.crdownload");
+    background-image: url("/media/sm-web.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
