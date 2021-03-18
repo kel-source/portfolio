@@ -15,6 +15,7 @@ body {
   background-image: url("/media/web.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 0.9s;
   color: var(--primary-color);
 }
 h1 {
