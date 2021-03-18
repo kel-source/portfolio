@@ -1,61 +1,66 @@
 :root {
-  --primary-color: black;
+  --primary-color: white;
   --secondary-color: #59687a;
-  --heading-font: "Libre Baskerville", serif;
+  --heading-font: "Old Standard TT", serif;
+  --content-font: "Comic Neue", cursive;
 }
 
 html {
   scroll-behavior: smooth;
   height: 100%;
+  transition: 5s;
 }
 
 body {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: url("/media/web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--primary-color);
 }
 h1 {
   font-size: 55px;
+  font-weight: bolder;
   font-family: var(--heading-font);
 }
-h1 .k,
-h1 .a-p {
-  font-size: 75px;
+h1 .caps {
+  font-size: 70px;
+}
+h2 {
+  font-family: var(--content-font);
 }
 
-.navbar {
-  background-color: var(--secondary-color);
-}
 .navbar-nav {
   margin: 0 0 0 auto;
+}
+.navbar-bg {
+  background-color: black;
 }
 
 .hero {
   margin-top: 150px !important;
-  max-width: 80%;
+  max-width: 90%;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 
-.k {
-  font-family: "Alex Brush", cursive;
-  font-size: xx-large;
-  line-height: 0%;
-}
-.e-l {
-  font-family: var(--heading-font);
-  font-size: small;
-  position: relative;
-  bottom: 4px;
-}
 .btn {
   background-color: var(--secondary-color);
   border: none;
 }
+.btn:hover {
+  background-color: #3edce0;
+  color: black;
+}
 
-@media (max-width: 520px) {
+@media (max-width: 576px) {
+  body {
+    background-image: url("/media/sm-web.jpg.crdownload");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .hero {
-    margin-top: 100px !important;
+    margin-top: 30% !important;
     max-width: 95%;
   }
 }
