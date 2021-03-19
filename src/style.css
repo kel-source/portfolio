@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url("/media/web.jpg");
+  background-image: url("/media/spiderweb.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.9s;
@@ -59,11 +59,11 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  body {
+  /* body {
     background-image: url("/media/sm-web.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
+  } */
   .hero {
     margin-top: 30% !important;
     max-width: 95%;
