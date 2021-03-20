@@ -1,6 +1,7 @@
 :root {
   --primary-color: white;
   --secondary-color: #59687a;
+  --hover-color: #3edce0;
   --heading-font: "Old Standard TT", serif;
   --content-font: "Comic Neue", cursive;
 }
@@ -22,10 +23,22 @@ h1 {
   font-weight: bolder;
   font-family: var(--heading-font);
 }
+h2 {
+  font-size: 5vw;
+}
 h2,
 h4,
 h5 {
   font-family: var(--content-font);
+}
+h5 {
+}
+h6 {
+  font-weight: lighter;
+  font-size: xx-small;
+  color: var(--primary-color);
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
 }
 p {
   font-size: 15px;
@@ -41,6 +54,7 @@ p {
 .fa-spider:hover {
   transition: 1s;
   transform: rotateX(180deg);
+  color: var(--hover-color);
 }
 .nav-link {
   font-family: var(--content-font);
@@ -52,21 +66,21 @@ p {
   border: none;
 }
 .btn:hover {
-  background-color: #3edce0;
+  background-color: var(--hover-color);
   color: black;
 }
 
 .hero {
-  margin-top: 150px !important;
+  margin-top: 25vh !important;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 .hero h1 {
-  font-size: 8vw;
+  font-size: 9vw;
 }
 .hero h1 .caps {
-  font-size: 10vw;
+  font-size: 11vw;
 }
 
 .card-title-sm,
@@ -75,7 +89,6 @@ p {
 }
 .card {
   text-align: center;
-  position: relative;
 }
 .card-img {
   opacity: 1;
@@ -85,7 +98,6 @@ p {
 .card-img-overlay {
   transition: 0.5s ease;
   opacity: 0;
-  position: absolute;
 }
 .card-img-overlay-md {
   top: 20%;
@@ -110,12 +122,18 @@ p {
   font-size: 12vw;
 }
 
-@media (max-width: 576px) {
-  .hero {
-    margin-top: 220px !important;
-  }
+.open-source-link {
+  text-decoration: none;
+  color: var(--primary-color);
 }
+.open-source-link:hover {
+  color: var(--hover-color);
+}
+
 @media (min-width: 992px) {
+  h2 {
+    font-size: 50px;
+  }
   .card-title,
   .card-text {
     font-size: 25px;
