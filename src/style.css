@@ -19,12 +19,8 @@ body {
   transition: 0.9s;
 }
 h1 {
-  font-size: 55px;
   font-weight: bolder;
   font-family: var(--heading-font);
-}
-h1 .caps {
-  font-size: 70px;
 }
 h2,
 h4,
@@ -32,7 +28,7 @@ h5 {
   font-family: var(--content-font);
 }
 p {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -48,6 +44,16 @@ p {
 }
 .nav-link {
   font-family: var(--content-font);
+  font-size: 20px;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  border: none;
+}
+.btn:hover {
+  background-color: #3edce0;
+  color: black;
 }
 
 .hero {
@@ -56,13 +62,11 @@ p {
   margin: 0 auto;
   text-align: center;
 }
-.btn {
-  background-color: var(--secondary-color);
-  border: none;
+.hero h1 {
+  font-size: 8vw;
 }
-.btn:hover {
-  background-color: #3edce0;
-  color: black;
+.hero h1 .caps {
+  font-size: 10vw;
 }
 
 .card-title-sm,
@@ -99,10 +103,27 @@ p {
 .card:hover .card-img-overlay {
   opacity: 1;
 }
+.container h1 {
+  font-size: 9vw;
+}
+.container h1 .caps {
+  font-size: 12vw;
+}
 
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 220px !important;
+  }
+}
 @media (min-width: 992px) {
   .card-title,
   .card-text {
     font-size: 25px;
+  }
+  .container h1 {
+    font-size: 89px;
+  }
+  .container h1 .caps {
+    font-size: 117px;
   }
 }
