@@ -27,7 +27,8 @@ h1 .caps {
   font-size: 70px;
 }
 h2,
-h4 {
+h4,
+h5 {
   font-family: var(--content-font);
 }
 p {
@@ -65,9 +66,40 @@ p {
   color: black;
 }
 
+.card {
+  text-align: center;
+}
+.card-img {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.card-img-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.card:hover .card-img {
+  opacity: 0.3;
+}
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
 @media (max-width: 576px) {
   .hero {
-    margin-top: 30% !important;
     max-width: 95%;
+  }
+  .card-img-overlay {
+    display: none;
+  }
+  .card:hover .card-img {
+    opacity: 1;
+  }
+}
+@media (max-width: 776px) {
+  .card-img-overlay-md {
+    top: 35%;
   }
 }
