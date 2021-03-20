@@ -52,7 +52,6 @@ p {
 
 .hero {
   margin-top: 150px !important;
-  max-width: 90%;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -77,8 +76,6 @@ p {
 .card-img-overlay {
   transition: 0.5s ease;
   opacity: 0;
-  top: 50%;
-  transform: translate(0, -50%);
 }
 .card:hover .card-img {
   opacity: 0.3;
@@ -88,18 +85,10 @@ p {
 }
 
 @media (max-width: 576px) {
-  .hero {
-    max-width: 95%;
-  }
   .card-img-overlay {
     display: none;
   }
   .card:hover .card-img {
     opacity: 1;
-  }
-}
-@media (max-width: 776px) {
-  .card-img-overlay-md {
-    top: 35%;
   }
 }
