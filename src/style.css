@@ -100,11 +100,9 @@ p {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .card-img-overlay {
-    display: none;
-  }
-  .card:hover .card-img {
-    opacity: 1;
+@media (min-width: 992px) {
+  .card-title,
+  .card-text {
+    font-size: 25px;
   }
 }
