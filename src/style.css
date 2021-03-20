@@ -65,8 +65,13 @@ p {
   color: black;
 }
 
+.card-title-sm,
+.card-text-sm {
+  color: black;
+}
 .card {
   text-align: center;
+  position: relative;
 }
 .card-img {
   opacity: 1;
@@ -76,6 +81,17 @@ p {
 .card-img-overlay {
   transition: 0.5s ease;
   opacity: 0;
+  position: absolute;
+}
+.card-img-overlay-md {
+  top: 20%;
+}
+.card-img-overlay-sm {
+  top: 10%;
+}
+.card-title,
+.card-text {
+  font-size: 1.75vw;
 }
 .card:hover .card-img {
   opacity: 0.3;
@@ -84,7 +100,7 @@ p {
   opacity: 1;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .card-img-overlay {
     display: none;
   }
