@@ -109,7 +109,7 @@ p {
   top: 20%;
 }
 .card-img-overlay-sm {
-  top: 1vw;
+  top: 3%;
 }
 .card-title,
 .card-text {
@@ -128,11 +128,11 @@ p {
   font-size: 12vw;
 }
 
-.open-source-link {
+.link {
   text-decoration: none;
   color: var(--primary-color);
 }
-.open-source-link:hover {
+.link:hover {
   color: var(--hover-color);
 }
 
