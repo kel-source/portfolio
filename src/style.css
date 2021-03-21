@@ -31,8 +31,6 @@ h4,
 h5 {
   font-family: var(--content-font);
 }
-h5 {
-}
 h6 {
   font-weight: lighter;
   font-size: xx-small;
@@ -69,6 +67,13 @@ p {
   background-color: var(--hover-color);
   color: black;
 }
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.link:hover {
+  color: var(--hover-color);
+}
 
 .hero {
   margin-top: 25vh !important;
@@ -95,6 +100,7 @@ p {
 }
 .card {
   text-align: center;
+  position: relative;
 }
 .card-img {
   opacity: 1;
@@ -104,16 +110,19 @@ p {
 .card-img-overlay {
   transition: 0.5s ease;
   opacity: 0;
-}
-.card-img-overlay-md {
-  top: 20%;
+  position: absolute;
 }
 .card-img-overlay-sm {
-  top: 3%;
+  top: 50%;
+  transform: translateY(-85%);
+}
+.card-img-overlay-md {
+  top: 60%;
+  transform: translateY(-100%);
 }
 .card-title,
 .card-text {
-  font-size: 1.5vw;
+  font-size: 1.75vw;
 }
 .card:hover .card-img {
   opacity: 0.3;
@@ -128,14 +137,6 @@ p {
   font-size: 12vw;
 }
 
-.link {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.link:hover {
-  color: var(--hover-color);
-}
-
 @media (min-width: 992px) {
   h2 {
     font-size: 45px;
@@ -143,9 +144,6 @@ p {
   .card-title,
   .card-text {
     font-size: 20px;
-  }
-  .card-img-overlay-sm {
-    top: 8%;
   }
   .hero h1 {
     font-size: 100px;
@@ -158,5 +156,13 @@ p {
   }
   .container h1 .caps {
     font-size: 117px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-img-overlay-sm {
+    top: 270px;
+  }
+  .card-img-overlay-md {
+    top: 330px;
   }
 }
