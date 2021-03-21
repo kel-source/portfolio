@@ -109,11 +109,11 @@ p {
   top: 20%;
 }
 .card-img-overlay-sm {
-  top: 10%;
+  top: 1vw;
 }
 .card-title,
 .card-text {
-  font-size: 1.75vw;
+  font-size: 1.5vw;
 }
 .card:hover .card-img {
   opacity: 0.3;
@@ -142,7 +142,10 @@ p {
   }
   .card-title,
   .card-text {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .card-img-overlay-sm {
+    top: 8%;
   }
   .hero h1 {
     font-size: 100px;
