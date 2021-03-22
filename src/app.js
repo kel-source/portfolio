@@ -1,7 +1,12 @@
 let today = new Date();
-let day = new Date(1995, 1, 6);
-let daysBetween = (today - day) / 8.64e7;
-let age = daysBetween / 365;
+let year = today.getFullYear();
+let birthday = new Date(year, 1, 6);
+let showAge = document.querySelector("#age");
 
-let showAge = document.querySelector("#demo");
-showAge.innerHTML = Math.floor(age);
+if (today >= birthday) {
+  let age = birthday.getFullYear() - 1995;
+  showAge.innerHTML = Math.floor(age);
+} else {
+  let age = birthday.getFullYear() - 1996;
+  showAge.innerHTML = Math.floor(age);
+}
