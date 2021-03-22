@@ -153,6 +153,9 @@ p {
   width: 24.5vw;
   height: 20vw;
 }
+.certificate {
+  width: 32vw;
+}
 .bottom {
   border-radius: 0 0 4px 4px;
 }
