@@ -1,6 +1,6 @@
 :root {
   --primary-color: white;
-  --secondary-color: #59687a;
+  --secondary-color: 89, 104, 122;
   --hover-color: #3edce0;
   --heading-font: "Old Standard TT", serif;
   --content-font: "Comic Neue", cursive;
@@ -60,7 +60,7 @@ p {
 }
 
 .btn {
-  background-color: var(--secondary-color);
+  background-color: rgba(var(--secondary-color));
   border: none;
 }
 .btn:hover {
@@ -135,6 +135,26 @@ p {
 }
 .container h1 .caps {
   font-size: 12vw;
+}
+
+.about-contents {
+  background-color: rgba(var(--secondary-color), 0.7);
+  padding: 10px;
+}
+.top {
+  border-radius: 4px 4px 0 0;
+}
+.about-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(var(--secondary-color), 0.7);
+}
+.about-img {
+  width: 24.5vw;
+  height: 20vw;
+}
+.bottom {
+  border-radius: 0 0 4px 4px;
 }
 
 @media (min-width: 992px) {
