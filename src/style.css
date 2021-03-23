@@ -35,6 +35,15 @@ h2,
 h5 {
   font-family: var(--sub-heading-font);
 }
+h6 {
+  font-size: xx-small;
+  color: black;
+  font-family: var(--sub-heading-font);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 p {
   font-weight: lighter;
 }
@@ -129,6 +138,7 @@ p {
 
 .contact-wrap {
   background-color: var(--accent-color);
+  position: relative;
 }
 .contact-link {
   color: black;
@@ -136,6 +146,13 @@ p {
 .contact-link:hover {
   transition: 1.25s;
   transform: rotateZ(360deg);
+}
+.source-link {
+  color: black;
+}
+.source-link:hover {
+  color: black;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
