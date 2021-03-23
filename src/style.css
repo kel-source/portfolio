@@ -70,7 +70,6 @@ p {
   border: none;
 }
 .link {
-  text-decoration: none;
   color: var(--primary-color);
 }
 .link:hover {
@@ -151,17 +150,11 @@ p {
     font-size: 117px;
   }
 
-  .hero h1 {
-    font-size: 100px;
-  }
-  .hero h1 .caps {
-    font-size: 120px;
-  }
-
   .card-title,
   .card-text {
     font-size: 20px;
   }
+
   .my-face {
     max-width: 430px;
   }
