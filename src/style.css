@@ -130,55 +130,66 @@ p {
 .card:hover .card-img-overlay {
   opacity: 1;
 }
-.container h1 {
+.page-title {
   font-size: 9vw;
 }
-.container h1 .caps {
+.page-title .caps {
   font-size: 12vw;
 }
 
-.about-contents {
-  background-color: rgba(var(--secondary-color), 0.7);
-  padding: 10px;
-}
-.top {
-  border-radius: 4px 4px 0 0;
-}
-.about-img-wrapper {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(var(--secondary-color), 0.7);
+.container {
+  display: block;
+  margin: 0 auto;
 }
 .about-img {
-  width: 24.5vw;
-  height: 20vw;
+  width: 40vw;
+  height: 25vw;
 }
-.certificate {
-  width: 32vw;
+.about-contents {
+  background-color: rgba(var(--secondary-color), 0.8);
+  padding: 10px;
 }
-.bottom {
-  border-radius: 0 0 4px 4px;
+.about-contents p,
+.about-contents li {
+  font-size: 1.5rem !important;
+}
+.fa-heart {
+  color: red;
+}
+.my-face {
+  width: 40vw;
+  height: 35vw;
 }
 
 @media (min-width: 992px) {
   h2 {
     font-size: 45px;
   }
-  .card-title,
-  .card-text {
-    font-size: 20px;
-  }
+
   .hero h1 {
     font-size: 100px;
   }
   .hero h1 .caps {
     font-size: 120px;
   }
-  .container h1 {
+
+  .card-title,
+  .card-text {
+    font-size: 20px;
+  }
+
+  .page-title {
     font-size: 89px;
   }
-  .container h1 .caps {
+  .page-title .caps {
     font-size: 117px;
+  }
+  .lg-wrapper {
+    position: fixed;
+  }
+  .about-contents p,
+  .about-contents li {
+    font-size: 1.2vw !important;
   }
 }
 @media (min-width: 1200px) {
