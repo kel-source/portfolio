@@ -31,20 +31,12 @@ h4,
 h5 {
   font-family: var(--content-font);
 }
-h6 {
-  font-weight: lighter;
-  font-size: xx-small;
-  color: var(--primary-color);
-  font-family: "Roboto Condensed", sans-serif;
-  text-align: right;
-}
 p {
-  font-size: 15px;
   font-weight: lighter;
 }
 
 .navbar-bg {
-  background-color: black;
+  background-color: var(--hover-color);
 }
 .navbar-nav {
   margin: 0 0 0 auto;
@@ -52,13 +44,16 @@ p {
 .fa-spider:hover {
   transition: 1s;
   transform: rotateX(180deg);
-  color: var(--hover-color);
 }
 .nav-link {
   font-family: var(--content-font);
   font-size: 20px;
 }
 
+.wrap {
+  padding-top: 90px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .btn {
   background-color: rgba(var(--secondary-color));
   border: none;
@@ -75,11 +70,15 @@ p {
   color: var(--hover-color);
 }
 
+.hero-wrap {
+  padding-top: 55px;
+}
 .hero {
   margin-top: 25vh !important;
   display: block;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 45vh;
 }
 .hero h1 {
   font-size: 9vw;
@@ -105,7 +104,6 @@ p {
 .card-img {
   opacity: 1;
   transition: 0.5s ease;
-  backface-visibility: hidden;
 }
 .card-img-overlay {
   transition: 0.5s ease;
@@ -125,7 +123,7 @@ p {
   font-size: 1.75vw;
 }
 .card:hover .card-img {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .card:hover .card-img-overlay {
   opacity: 1;
@@ -136,30 +134,32 @@ p {
 .page-title .caps {
   font-size: 12vw;
 }
-
-.wrapper {
-  display: block;
-  margin: 5%;
-}
-.about-contents {
-  background-color: rgba(var(--secondary-color), 0.8);
-  padding: 10px;
-}
-.about-contents p,
-.about-contents li {
-  font-size: 1.5rem !important;
-}
-.fa-heart {
-  color: red;
-}
 .my-face {
-  width: 40vw;
-  height: 35vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-wrap {
+  background-color: var(--hover-color);
+}
+.contact-link {
+  color: black;
+}
+.contact-link:hover {
+  transition: 1.25s;
+  transform: rotateZ(360deg);
 }
 
 @media (min-width: 992px) {
   h2 {
     font-size: 45px;
+  }
+
+  .page-title {
+    font-size: 89px;
+  }
+  .page-title .caps {
+    font-size: 117px;
   }
 
   .hero h1 {
@@ -173,19 +173,8 @@ p {
   .card-text {
     font-size: 20px;
   }
-
-  .page-title {
-    font-size: 89px;
-  }
-  .page-title .caps {
-    font-size: 117px;
-  }
-  .lg-wrapper {
-    position: fixed;
-  }
-  .about-contents p,
-  .about-contents li {
-    font-size: 2.05vh !important;
+  .my-face {
+    max-width: 430px;
   }
 }
 @media (min-width: 1200px) {
