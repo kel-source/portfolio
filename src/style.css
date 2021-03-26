@@ -85,6 +85,11 @@ p {
 .link:hover {
   color: var(--accent-color);
 }
+.card-body a,
+.contact-link,
+.source-link {
+  color: black;
+}
 
 .hero-wrap {
   padding-top: 55px;
@@ -105,9 +110,7 @@ p {
   position: relative;
   color: black;
 }
-.card-body a {
-  color: black;
-}
+
 .card-img {
   opacity: 1;
   transition: 0.5s ease;
@@ -144,16 +147,11 @@ p {
   background-color: var(--accent-color);
   position: relative;
 }
-.contact-link {
-  color: black;
-}
 .contact-link:hover {
   transition: 1.25s;
   transform: rotateZ(360deg);
 }
-.source-link {
-  color: black;
-}
+
 .source-link:hover {
   color: inherit;
   font-weight: bold;
