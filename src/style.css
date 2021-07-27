@@ -138,11 +138,6 @@ p {
   font-size: 1.75vw;
 }
 
-.my-face {
-  display: block;
-  margin: 0 auto;
-}
-
 .contact-wrap {
   background-color: var(--accent-color);
   position: relative;
